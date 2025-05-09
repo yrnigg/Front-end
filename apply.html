@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apply Now - YouthJobConnect</title>
+  <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <section class="intro">
+      <h1>Apply for This Job</h1>
+      <p>Fill in the details below to submit your application.</p>
+    </section>
+
+    <section class="application-form">
+      <form id="applyForm" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cv">Upload CV (PDF or DOC)</label>
+          <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Why are you a good fit for this role?</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Submit Application</button>
+      </form>
+    </section>
+  </div>
+
+</body>
+</html>
